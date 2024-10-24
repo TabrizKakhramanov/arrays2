@@ -35,12 +35,10 @@ public class Main {
 
         //task4
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = 0; i < reverseFullName.length/2; i++) {
-            char element = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length-i-1];
-            reverseFullName[reverseFullName.length-i-1]=element;
+
+        for (int i = 0; i < reverseFullName.length; i++) {
+            System.out.print(reverseFullName[reverseFullName.length-i-1]+" ");
         }
-        System.out.println(Arrays.toString(reverseFullName));
 
 
 
